@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+.der{
+    margin: 0;
+    padding: 0;
+
+}
+#container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
+}
+
+body {
+    background: whitesmoke;
+}
+.todo-app {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 520px;
+    min-height: 600px;
+    background: #161a2b;
+    text-align: center;
+    margin: 128px auto;
+    border-radius: 10px;
+    padding-bottom: 32px;
+}
+
+h1 {
+    margin: 15px 0;
+    color:black;
+    font-size: 24px;
+}
+
+p {
+    font-size: 8px;
+}
+
+.complete {
+    text-decoration: line-through;
+    opacity: 0.4;
+}
+
+.todo-form {
+    margin-bottom: 32px;
+}
+
+.todo-input {
+    padding: 14px 32px 14px 16px;
+    border-radius: 4px 0 0 4px;
+    border: 2px solid black;
+    outline: none;
+    margin: 20px 60px;
+    width: 900px;
+    border-radius: 30px 30px 30px 30px;
+    background: transparent;
+    color: black;
+}
+
+.todo-input::placeholder {
+    color: black;
+}
+
+.todo-button {
+    padding: 5px;
+    font-size: 14px;
+    width: 180px;
+    border: none;
+    border-radius: 30px 30px 30px 30px;
+    cursor: pointer;
+    outline: none;
+    background: blue;
+    color: #fff;
+
+}
+
+.todo-input.edit {
+    border: 2px solid darkorange;
+}
+
+.todo-button.edit {
+    background: darkorange;
+    padding: 16px 22px;
+}
+
+.todo-container {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.todo-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4px auto;
+    border: 2px solid black;
+    color: black;
+    background:whitesmoke;
+    padding: 16px;
+    border-radius: 5px;
+    width: 90%;
+}
+
+.icons {
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.delete-icon {
+    margin-right: 5px;
+    color: red;
+}
+
+.edit-icon {
+    color: orange;
+}
